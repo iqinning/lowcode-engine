@@ -19,7 +19,7 @@
 
 [download-image]: https://img.shields.io/npm/dm/@alilc/lowcode-engine.svg?style=flat-square
 [download-url]: https://npmjs.org/package/@alilc/lowcode-engine
-[help-wanted-image]: https://flat.badgen.net/github/label-issues/ant-design/ant-design/help%20wanted/open
+[help-wanted-image]: https://flat.badgen.net/github/label-issues/alibaba/lowcode-engine/help%20wanted/open
 [help-wanted-url]: https://github.com/alibaba/lowcode-engine/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22
 [discussions-image]: https://img.shields.io/badge/discussions-on%20github-blue?style=flat-square
 [discussions-url]: https://github.com/alibaba/lowcode-engine/discussions

@@ -1,0 +1,32 @@
+{
+  "name": "@alilc/lowcode-utils",
+  "version": "1.0.0-beta.17",
+  "description": "Utils for Ali lowCode engine",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "build": "build-scripts build --skip-demo"
+  },
+  "dependencies": {
+    "@alifd/next": "^1.19.16",
+    "@alilc/lowcode-types": "1.0.0-beta.17",
+    "lodash": "^4.17.21",
+    "react": "^16",
+    "zen-logger": "^1.1.0"
+  },
+  "devDependencies": {
+    "@alib/build-scripts": "^0.1.18",
+    "@types/node": "^13.7.1",
+    "@types/react": "^16",
+    "build-plugin-component": "^0.2.10"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "gitHead": "7ceab30f7d55a4be02f766eccaa4b96d35804e0b"
+}

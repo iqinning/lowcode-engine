@@ -1,0 +1,6 @@
+
+{
+  "type": "ice-app",
+  "builder": "@alilc/builder-ice-app"
+}
+    

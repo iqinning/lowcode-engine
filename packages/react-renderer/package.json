@@ -1,0 +1,45 @@
+{
+  "name": "@alilc/lowcode-react-renderer",
+  "version": "1.0.0-beta.17",
+  "description": "react renderer for ali lowcode engine",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "test": "build-scripts test --config build.test.json",
+    "start": "build-scripts start",
+    "build": "build-scripts build --skip-demo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:ali-lowcode/ali-lowcode-engine.git"
+  },
+  "keywords": [
+    "lowcode",
+    "engine",
+    "react"
+  ],
+  "dependencies": {
+    "@alifd/next": "^1.21.16",
+    "@alilc/lowcode-renderer-core": "1.0.0-beta.17"
+  },
+  "devDependencies": {
+    "@alib/build-scripts": "^0.1.18",
+    "@alifd/next": "^1.19.17",
+    "build-plugin-component": "^0.2.10",
+    "build-plugin-fusion": "^0.1.0",
+    "build-plugin-moment-locales": "^0.1.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-test-renderer": "^16"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://unpkg.alibaba-inc.com/@alilc/lowcode-react-renderer@1.0.21/build/index.html",
+  "gitHead": "7ceab30f7d55a4be02f766eccaa4b96d35804e0b"
+}

@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable no-new-func */
-import Debug from 'debug';
+import logger from './logger';
 import { isI18nData, RootSchema, NodeSchema, isJSExpression, JSSlot } from '@alilc/lowcode-types';
 // moment对象配置
 import _moment from 'moment';
@@ -35,8 +35,6 @@ const EXPRESSION_TYPE = {
   JSBLOCK: 'JSBlock',
   I18N: 'i18n',
 };
-
-const debug = Debug('utils:index');
 
 /**
  * check if schema passed in is a valid schema
@@ -120,7 +118,7 @@ export function isJSSlot(obj: any): obj is JSSlot {
   }
 
   // Compatible with the old protocol JSBlock
-  return ([EXPRESSION_TYPE.JSSLOT, EXPRESSION_TYPE.JSBLOCK].includes(obj.type));
+  return [EXPRESSION_TYPE.JSSLOT, EXPRESSION_TYPE.JSBLOCK].includes(obj.type);
 }
 
 /**
@@ -264,7 +262,7 @@ export function parseExpression(str: any, self: any) {
     const code = `with($scope || {}) { ${tarStr} }`;
     return new Function('$scope', code)(self);
   } catch (err) {
-    debug('parseExpression.error', err, str, self);
+    logger.error('parseExpression.error', err, str, self);
     return undefined;
   }
 }

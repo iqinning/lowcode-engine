@@ -266,6 +266,7 @@ export default function (metadata: TransformedComponentMetadata): TransformedCom
                 componentName: 'JsonSetter',
                 props: {
                   label: { type: 'i18n', 'zh-CN': '编辑数据', 'en-US': 'Edit Data' },
+                  defaultValue: '[]',
                 },
               },
               {
